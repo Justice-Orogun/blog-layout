@@ -5,10 +5,65 @@ body{
     background-color: blanchedalmond;
 
 }
-.header{
-    color: crimson;
+
+
+*{
+    box-sizing: border-box;
 }
 
-.header .h1{
-    color: crimson;
+header{
+    background-color: navy; 
+    padding: 30px;
+}
+
+header h1{
+    text-align: center;
+    font-size: 50px;
+    font-style: normal;
+    color: white;
+}
+
+.left-column{
+    float: left;
+    padding: 75px;
+    text-align: left;
+    width: 75%;
+
+}
+.left-column .card img{
+    height: 450px;
+}
+
+.right-column{
+    float: right;
+    padding-left: 20px;
+    width: 25%;
+}
+
+
+.card{
+    padding: 20px;
+    background-color: #ffff;
+    margin-top: 20px;
+}
+
+.card img{
+    width: 100%;
+}
+
+
+
+.right-column .card img{
+
+    margin-bottom: 10px;
+
+}
+
+
+@media(max-width:800px){
+
+    .left-column, .right-column{
+        width: 100%;
+        padding: 0px;
+    }
 }
